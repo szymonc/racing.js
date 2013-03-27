@@ -1,9 +1,18 @@
 goog.require('f1.racing.config.game_config');
+goog.require('f1.racing.src.Racing');
 
-console.log(f1.racing);
+var main = function(){
+    console.log(f1.racing.src);
+    var config  =  new f1.racing.config.game_config();
+    var racing  =  new f1.racing.src.Racing(config);
+}
 
-var config  =  new f1.racing.config.game_config;
-
+/*racing.addPlayer({
+    source: new Resource({ url: 'images/car1.jpg', width: 16, height: 32 }),
+    x: 32,
+    y: 50,
+    rotation: 90
+})*/
 
 
 /*
